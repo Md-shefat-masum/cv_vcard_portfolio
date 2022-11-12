@@ -1,0 +1,88 @@
+/* header part css start */
+header {
+    background-color: rgba(0, 128, 0, 0.211);
+    height: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.488);
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: var(--border);
+    position: relative;
+    /* background-color: blueviolet; */
+}
+
+.item {
+    /* background-color: rgb(153, 226, 43); */
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item.item1 {
+    /* background-color: rgb(226, 122, 43); */
+    border: 5px solid yellowgreen;
+}
+
+.item2 {
+    border: 5px solid rgb(50, 179, 205);
+    height: 120px;
+    width: 120px;
+}
+
+.item3 {
+    border: 5px solid rgb(205, 50, 192);
+    height: 90px;
+    width: 90px;
+}
+
+/* .heading{
+    border: 1px solid red;
+    position: relative;
+} */
+h1 {
+    font-size: 20px;
+    position: relative;
+}
+
+h1::before {
+    content: 'this is something';
+    font-size: 5px;
+    line-height: 5px;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: rgb(9, 120, 121);
+    background: linear-gradient(90deg, rgba(9, 120, 121, 0.09567577030812324) 19%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 0.07046568627450978) 83%);
+    bottom: 1px;
+    left: 0;
+}
+
+/* .sticky_1{
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.arrow{
+
+    background-color: chocolate;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+} */
