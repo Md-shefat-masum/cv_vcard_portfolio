@@ -3,11 +3,16 @@ body{
     background-size: cover;
     background-position: bottom center;
 }
+.container{
+    width: 90%;
+    margin: auto;
+    border: var(--border);
+}
 #theme_body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2.2fr 3.8fr;
-    max-width: 1200px;
+    grid-template-columns: 1.8fr 4.2fr;
+    max-width: 1400px;
     margin: auto;
 }
 
