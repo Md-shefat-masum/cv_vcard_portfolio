@@ -3,7 +3,7 @@
 }
 
 .btn_green {
-    padding: 15px 25px;
+    padding: 12px 25px;
     background-color: var(--brand_color_deep);
     border: 1px solid var(--brand_color_deep);
     color: var(--white);
@@ -17,7 +17,7 @@
 }
 
 .btn_green_outline {
-    padding: 15px 25px;
+    padding: 12px 25px;
     color: var(--brand_color_deep);
     border: 1px solid var(--brand_color_deep);
     border-radius: 5px;
@@ -29,7 +29,7 @@
 }
 
 .btn_gray {
-    padding: 15px 25px;
+    padding: 12px 25px;
     background-color: var(--brand_color_deep);
     border: 1px solid var(--brand_color_deep);
     color: var(--white);
@@ -43,7 +43,7 @@
 }
 
 .btn_gray_outline {
-    padding: 15px 25px;
+    padding: 12px 25px;
     color: var(--gray);
     border: 1px solid var(--gray);
     border-radius: 5px;
