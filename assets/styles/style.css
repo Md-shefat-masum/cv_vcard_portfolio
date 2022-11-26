@@ -3,12 +3,21 @@
 @import "./includes/layout.css";
 @import "./includes/left_part.css";
 @import "./includes/nav.css";
+
+/* home page css modules */
 @import "./includes/pages/home/banner.css";
 @import "./includes/pages/home/couter.css";
 @import "./includes/pages/home/service.css";
 @import "./includes/pages/home/testimonial.css";
 @import "./includes/pages/home/client.css";
 @import "./includes/pages/home/pricing.css";
+
+/* resume page css modules */
+@import "./includes/pages/resume/education.css";
+@import "./includes/pages/resume/skill.css";
+@import "./includes/pages/resume/experience.css";
+@import "./includes/pages/resume/knowledge.css";
+@import "./includes/pages/resume/cirtificate.css";
 
 
 
