@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding-bottom: 100px;
+    /* border: var(--border); */
 }
 
 /* .banner_body .left_description {} */
@@ -34,10 +36,14 @@
 
 /* .banner_body .left_description ul li a {} */
 
-/* .banner_body .right_image {} */
+.banner_body .right_image {
+    position: relative;
+}
 
 .banner_body .right_image .img {
     clip-path: circle(60.5% at 63% 38%);
+    position: absolute;
+    top: -40px;
+    right: -40px;
 }
-
 /* .banner_body .right_image .img img {} */

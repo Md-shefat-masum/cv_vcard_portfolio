@@ -1,0 +1,41 @@
+/* .skill_list {} */
+
+.skill_list .skill_item {
+    /* border: var(--border); */
+    margin-bottom: 20px;
+}
+
+.skill_list .skill_item .skill_des {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_list .skill_item .skill_des .name {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 10px;
+}
+
+.skill_list .skill_item .skill_des .percent {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.skill_list .skill_item .skill_progress {
+    position: relative;
+    height: 10px;
+    border-radius: 25px;
+    background-color: #ebeef2;
+}
+
+.skill_list .skill_item .skill_progress .progress_bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 25px;
+    background-color: var(--brand_color_deep);
+
+}

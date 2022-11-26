@@ -84,3 +84,20 @@
     right: 0;
     z-index: 1;
 }
+
+.page_heading {
+    margin-bottom: 30px;
+}
+
+.page_heading .heading {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.page_heading .subheading {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 400;
+}

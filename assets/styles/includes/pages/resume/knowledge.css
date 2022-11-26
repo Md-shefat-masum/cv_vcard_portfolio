@@ -1,0 +1,14 @@
+.knowledge_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.knowledge_list .knowledge_item{
+    font-size: 14px;
+    padding: 8px 20px;
+    color: var(--white);
+    background-color: var(--brand_color_deep);
+    font-weight: 400;
+    border-radius: 25px;
+}

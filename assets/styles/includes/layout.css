@@ -39,6 +39,7 @@ body{
     flex: 1;
     height: calc(100vh - 140px);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .right_side_site_contents main::-webkit-scrollbar {
