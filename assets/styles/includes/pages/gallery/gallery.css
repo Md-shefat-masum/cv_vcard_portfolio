@@ -97,3 +97,33 @@
     bottom: 10px;
     opacity: 0;
 }
+
+
+.image_viewer.active{
+    transform: scale(1);
+}
+.image_viewer{
+    transition-duration: .3s;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.image_viewer img{
+    max-width: 70%;
+}
+
+.image_viewer .close_icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+}

@@ -25,6 +25,10 @@
 /* blog page css */
 @import "./includes/pages/blog/blog_list.css";
 
+/* contact page css */
+@import "./includes/pages/contact/contact.css";
+@import "./includes/pages/contact/contact_form.css";
+
 
 
 
