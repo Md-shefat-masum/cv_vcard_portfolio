@@ -91,20 +91,72 @@
 
                             <div class="contact_inputs">
                                 <div class="inputs">
-                                    <input type="text" class="input">
-                                    <input type="text" class="input">
-                                    <input type="text" class="input">
+                                    <div class="form_el">
+                                        <label for="" id="first_name_id">First Name</label>
+                                        <input onkeydown="
+                                            event.target.value.length>0 ?
+                                            first_name_id.classList.add('active') :
+                                            first_name_id.classList.remove('active')
+                                        " 
+                                        name="" id=""/>
+                                    </div>
+                                    <div class="form_el">
+                                        <label for="" id="last_name_id">Last Name</label>
+                                        <input onkeydown="
+                                            event.target.value.length>0 ?
+                                            last_name_id.classList.add('active') :
+                                            last_name_id.classList.remove('active')
+                                        " 
+                                        name="" id=""/>
+                                    </div>
+                                    <div class="form_el">
+                                        <label for="" id="email_name_id">email Name</label>
+                                        <input onkeydown="
+                                            event.target.value.length>0 ?
+                                            email_name_id.classList.add('active') :
+                                            email_name_id.classList.remove('active')
+                                        " 
+                                        name="" id=""/>
+                                    </div>
+                                    <div class="form_el">
+                                        <label for="" id="subject_name_id">subject Name</label>
+                                        <input onkeydown="
+                                            event.target.value.length>0 ?
+                                            subject_name_id.classList.add('active') :
+                                            subject_name_id.classList.remove('active')
+                                        " 
+                                        name="" id=""/>
+                                    </div>
+                                    <br>
                                     <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                                    <br>
                                     <button>submit</button>
                                 </div>
                                 <div class="textarea">
-                                    <textarea name="" id=""></textarea>
+                                    <div class="form_el">
+                                        <label for="" id="description_id">Description</label>
+                                        <textarea onkeydown="
+                                            event.target.value.length>0 ?
+                                            description_id.classList.add('active') :
+                                            description_id.classList.remove('active')
+                                        " 
+                                        name="" id=""></textarea>
+                                    </div>
+
+                                    <!-- <div class="box">
+                                        <span class="content">
+                                            Lorem ipsum dolor sit amet.
+                                            Lorem ipsum dolor sit amet.
+                                            Lorem ipsum dolor sit amet.
+                                        </span>
+                                    </div> -->
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </main>
-                <nav>
+                <nav id="nav_id">
                     <ul>
                         <li><a href="index.html"><i class="fa-regular fa-user"></i></a></li>
                         <li><a href="resume.html"><i class="fa-solid fa-graduation-cap"></i></a></li>
@@ -115,6 +167,7 @@
                 </nav>
             </div>
         </div>
+        
     </div>
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
