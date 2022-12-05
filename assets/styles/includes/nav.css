@@ -18,3 +18,12 @@ nav ul li a i {
 nav ul li a i:hover {
     color: var(--brand_color_deep);
 }
+
+nav ul li a span{
+    color: white;
+    text-transform: capitalize;
+    padding-left: 10px;
+    vertical-align: top;
+    line-height: 25px;
+    display: none;
+}

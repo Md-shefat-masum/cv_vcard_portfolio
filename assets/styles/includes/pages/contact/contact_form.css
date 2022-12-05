@@ -10,11 +10,17 @@
 
 .contact_form .contact_container .contact_inputs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: 
+        "inputs textarea"
+        "form_footer ."
+    ;
     gap: 30px;
 }
 
-/* .contact_form .contact_container .contact_inputs .inputs {} */
+.contact_form .contact_container .contact_inputs .inputs {
+    grid-area: inputs;
+}
 
 .contact_form .contact_container .contact_inputs .inputs input {
     width: 100%;
@@ -24,7 +30,11 @@
     box-sizing: border-box;
 }
 
-.contact_form .contact_container .contact_inputs .inputs button {
+.contact_form .contact_container .contact_inputs .form_footer {
+    grid-area: form_footer;
+}
+
+.contact_form .contact_container .contact_inputs .form_footer button {
     background-color: var(--brand_color_deep);
     color: var(--white);
     border: 1px solid transparent;
@@ -42,6 +52,7 @@
 
 .contact_form .contact_container .textarea {
     position: relative;
+    grid-area: textarea;
 }
 
 .contact_form .contact_container .textarea textarea {

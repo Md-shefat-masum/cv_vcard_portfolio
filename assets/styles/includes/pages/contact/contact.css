@@ -35,36 +35,3 @@
     height: 200px;
 }
 
-/* z index */
-.box {
-    border: var(--border);
-    height: 100px;
-    position: relative;
-}
-
-.box::after {
-    content: '';
-    height: 30px;
-    width: 100px;
-    background-color: rgb(132, 165, 42);
-    position: absolute;
-    left: 50px;
-    top: 100px;
-    z-index: 9999999;
-}
-
-.box::before {
-    content: '';
-    height: 30px;
-    width: 100px;
-    background-color: brown;
-    position: absolute;
-    left: 50px;
-    bottom: 10px;
-    z-index: 9999999;
-}
-
-.box .content {
-    position: relative;
-    z-index: 1;
-}

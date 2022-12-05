@@ -101,3 +101,20 @@
     color: var(--gray);
     font-weight: 400;
 }
+
+.top_bar{
+    /* border: var(--border); */
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.304);
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+}
+.top_bar .logo{}
+.top_bar .navbar_toggle{}
