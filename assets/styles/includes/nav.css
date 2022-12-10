@@ -1,25 +1,29 @@
 /* navbar css */
 /* nav {} */
 
+nav>.profile_part{
+    display: none;
+}
+
 /* nav ul {} */
 
-nav ul li {
+nav>ul li {
     text-align: center;
     margin: 30px 0px;
 }
 
 /* nav ul li a {} */
 
-nav ul li a i {
+nav>ul li a i {
     color: var(--gray);
     font-size: 28px;
 }
 
-nav ul li a i:hover {
+nav>ul li a i:hover {
     color: var(--brand_color_deep);
 }
 
-nav ul li a span{
+nav>ul li a span {
     color: white;
     text-transform: capitalize;
     padding-left: 10px;

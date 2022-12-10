@@ -38,6 +38,53 @@
     .contact_informations .contact_information_list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .blog_list {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 50px;
+    }
+
+    .gallery_list {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 50px;
+    }
+
+    .resume_section_row {
+        grid-template-columns: 100%;
+        padding-bottom: 50px;
+    }
+
+    .banner_body {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 0;
+    }
+
+    .banner_body .right_image .img {
+        position: unset;
+    }
+
+    .pricing_list,
+    .testimonial_list,
+    .service_list,
+    .counter_list {
+        grid-template-columns: 100%;
+    }
+
+    .banner_body .left_description .designation {
+        margin-top: 75px;
+    }
+
+    .testimonial_list {
+        padding-top: 55px;
+    }
+
+    .testimonial_list .testimonial_item {
+        margin-bottom: 50px;
+    }
+
+    .client_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 0px) and (max-width: 767.9px) {
@@ -45,17 +92,21 @@
         display: flex;
     }
 
-    nav ul li {
+    nav>.profile_part {
+        display: block;
+    }
+
+    nav>ul li {
         text-align: left;
         padding-left: 30px;
     }
 
-    nav ul li a i {
+    nav>ul li a i {
         width: 35px;
         color: white;
     }
 
-    nav ul li a span {
+    nav>ul li a span {
         display: inline-block;
     }
 
@@ -70,17 +121,197 @@
         width: 80vw;
         right: -100vw;
         top: 51px;
-        height: 100vh;
+        height: calc(100vh - 50px);
         transition-duration: .5s;
         z-index: 99999;
+        overflow-y: scroll;
     }
 }
 
-@media (min-width: 576px) and (max-width: 767.9px) {}
+@media (min-width: 576px) and (max-width: 767.9px) {
 
-@media (min-width: 768px) and (max-width: 991.9px) {}
+    #theme_body {
+        grid-template-columns: 1fr;
+    }
 
-@media (min-width: 992px) and (max-width: 1199.9px) {}
+    #theme_body .left_profile_info {
+        display: none;
+    }
+
+    #theme_body .right_side_site_content_wrapper {
+        padding: 0;
+    }
+
+    .right_side_site_contents main {
+        padding: 0px 15px;
+        width: 90vw;
+        height: unset;
+        overflow-y: unset;
+        overflow-x: unset;
+    }
+
+    .contact_form .contact_container .contact_inputs {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "inputs"
+            "textarea"
+            "form_footer"
+        ;
+        gap: 0;
+        overflow-x: hidden;
+    }
+
+    .contact_informations .contact_information_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog_list {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 50px;
+    }
+
+    .gallery_list {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 50px;
+    }
+
+    .resume_section_row {
+        grid-template-columns: 100%;
+        padding-bottom: 50px;
+    }
+
+    .banner_body {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 0;
+    }
+
+    .banner_body .right_image .img {
+        position: unset;
+    }
+
+    .pricing_list,
+    .testimonial_list,
+    .service_list,
+    .counter_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner_body .left_description .designation {
+        margin-top: 75px;
+    }
+
+    .testimonial_list {
+        padding-top: 55px;
+    }
+
+    .testimonial_list .testimonial_item {
+        margin-bottom: 50px;
+    }
+
+    .client_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    #theme_body {
+        grid-template-columns: 244px calc(100vw - 244px);
+    }
+
+    .right_side_site_contents main {
+        padding: 10px;
+    }
+
+    nav>ul li a i {
+        font-size: 18px;
+    }
+
+    .right_side_site_contents nav {
+        width: 50px;
+    }
+
+    .contact_informations .contact_information_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_form .contact_container .contact_inputs {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "inputs"
+            "textarea"
+            "form_footer"
+        ;
+        gap: 0;
+        overflow-x: hidden;
+    }
+
+    .contact_informations .contact_information_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog_list .blog_item .bottom a h3 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .education_list .experience_description .description_heading,
+    .education_list .education_item .experence_time .institue,
+    .education_list .education_item .experence_time .year{
+        font-size: 13px;
+    }
+
+    .education_list .education_item .experence_time{
+        width: 70px;
+    }
+
+    .profile_name {
+        font-size: 26px;
+        line-height: 17px;
+    }
+
+    .banner_body {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 0;
+    }
+
+    .banner_body .right_image .img {
+        position: unset;
+    }
+    .counter_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial_list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonial_list {
+        padding-top: 55px;
+    }
+
+    .testimonial_list .testimonial_item {
+        margin-bottom: 50px;
+    }
+
+    .client_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+    .profile_name {
+        font-size: 24px;
+        line-height: 21px;
+    }
+    .profile_designation {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
 
 @media (min-width: 1200px) and (max-width: 1399.9px) {}
 

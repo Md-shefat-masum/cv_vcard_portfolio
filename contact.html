@@ -85,7 +85,10 @@
                         </div>
 
                         <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.2463698346196!2d90.3593219509078!3d23.80983669234353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1670cdb1779%3A0x645bbf4f0aeb1d56!2sTech%20Park%20IT!5e0!3m2!1sen!2sbd!4v1669823509613!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.2463698346196!2d90.3593219509078!3d23.80983669234353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1670cdb1779%3A0x645bbf4f0aeb1d56!2sTech%20Park%20IT!5e0!3m2!1sen!2sbd!4v1669823509613!5m2!1sen!2sbd"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
@@ -107,8 +110,7 @@
                                             event.target.value.length>0 ?
                                             first_name_id.classList.add('active') :
                                             first_name_id.classList.remove('active')
-                                        " 
-                                        name="" id=""/>
+                                        " name="" id="" />
                                     </div>
                                     <div class="form_el">
                                         <label for="" id="last_name_id">Last Name</label>
@@ -116,8 +118,7 @@
                                             event.target.value.length>0 ?
                                             last_name_id.classList.add('active') :
                                             last_name_id.classList.remove('active')
-                                        " 
-                                        name="" id=""/>
+                                        " name="" id="" />
                                     </div>
                                     <div class="form_el">
                                         <label for="" id="email_name_id">email Name</label>
@@ -125,8 +126,7 @@
                                             event.target.value.length>0 ?
                                             email_name_id.classList.add('active') :
                                             email_name_id.classList.remove('active')
-                                        " 
-                                        name="" id=""/>
+                                        " name="" id="" />
                                     </div>
                                     <div class="form_el">
                                         <label for="" id="subject_name_id">subject Name</label>
@@ -134,11 +134,11 @@
                                             event.target.value.length>0 ?
                                             subject_name_id.classList.add('active') :
                                             subject_name_id.classList.remove('active')
-                                        " 
-                                        name="" id=""/>
+                                        " name="" id="" />
                                     </div>
                                     <br>
-                                    <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI">
+                                    </div>
                                     <br>
                                 </div>
 
@@ -149,8 +149,7 @@
                                             event.target.value.length>0 ?
                                             description_id.classList.add('active') :
                                             description_id.classList.remove('active')
-                                        " 
-                                        name="" id=""></textarea>
+                                        " name="" id=""></textarea>
                                     </div>
 
                                     <!-- <div class="box">
@@ -169,11 +168,39 @@
                         </div>
                     </div>
                 </main>
-                
+
                 <nav id="nav_id" class="">
+                    <div class="profile_part">
+                        <div class="profile_circle">
+                            <div class="img">
+                                <img src="./assets/images/profile.png" alt="profile">
+                            </div>
+                        </div>
+                        <ul class="language_switcher">
+                            <li><a href="#">fr</a></li>
+                            <li><a class="active" href="#">en</a></li>
+                        </ul>
+
+                        <h1 class="profile_name">Alex Smith</h1>
+                        <h2 class="profile_designation">Web Designer</h2>
+
+                        <ul class="s_links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+
+                        <ul class="contact_list">
+                            <li><a href="#">01843512382</a></li>
+                            <li><a href="#">info@ex.com</a></li>
+                        </ul>
+
+                        <a href="#" class="cv_btn" download="">Download CV</a>
+                    </div>
                     <ul>
                         <li><a href="index.html"><i class="fa-regular fa-user"></i> <span>Profile</span> </a></li>
-                        <li><a href="resume.html"><i class="fa-solid fa-graduation-cap"></i> <span>Resume</span></a></li>
+                        <li><a href="resume.html"><i class="fa-solid fa-graduation-cap"></i> <span>Resume</span></a>
+                        </li>
                         <li><a href="porfolio.html"><i class="fa-solid fa-briefcase"></i> <span>Projects</span></a></li>
                         <li><a href="blog.html"><i class="fa-solid fa-book"></i> <span>Blogs</span></a></li>
                         <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> <span>Contact</span></a></li>
@@ -181,7 +208,7 @@
                 </nav>
             </div>
         </div>
-        
+
     </div>
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
