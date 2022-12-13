@@ -313,5 +313,6 @@
 @media (min-width: 1400px) {
     .test{
         border-width: 1px;
+        color: red;
     }
 }
